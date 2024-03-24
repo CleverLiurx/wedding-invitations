@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-7gmcl9gy8f6410db --n quickstartFunctions --r --project "/Users/roxin/Documents/Codes/wedding-invitations" --report_first --report
