@@ -1,4 +1,5 @@
 // pages/invite/index.js
+import { shareConfig } from '../../utils/index'
 Page({
 
   /**
@@ -61,6 +62,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-
+    return {
+      title: '刘容新&石蕊的婚礼请柬',
+      path: 'pages/invite/index',
+      imageUrl: '../../images/share-bg.jpg',
+    }
   }
 })

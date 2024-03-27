@@ -1,2 +1,6 @@
 <!--pages/invite/index.wxml-->
-<text>pages/invite/index.wxml</text>
+<view>我们结婚啦</view>
+<view>来张照片</view>
+<view>寒暄几句</view>
+<view>时间地点</view>
+<view>联系方式</view>

@@ -1,2 +1,6 @@
 <!--pages/story/index.wxml-->
-<text>pages/story/index.wxml</text>
+<view>寒暄几句</view>
+<view>2018年</view>
+<view>照片</view>
+<view>2019年</view>
+<view>照片</view>

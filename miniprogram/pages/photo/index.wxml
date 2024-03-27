@@ -1,2 +1,6 @@
 <!--pages/photo/index.wxml-->
-<text>pages/photo/index.wxml</text>
+<view>swiper</view>
+<view>照片</view>
+<view>照片</view>
+<view>照片</view>
+<view>照片</view>
