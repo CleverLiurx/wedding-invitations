@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/invite/index",
     "pages/index/index",
     "pages/goods-list/index",
     "pages/examples/index",
@@ -11,7 +12,10 @@
     "pages/updateRecordSuccess/index",
     "pages/sumRecord/index",
     "pages/sumRecordResult/index",
-    "pages/web/index"
+    "pages/web/index",
+    "pages/story/index",
+    "pages/photo/index",
+    "pages/navigation/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -29,22 +33,28 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "快速开始",
-        "iconPath": "images/icons/home.png",
-        "selectedIconPath": "images/icons/home-active.png"
+        "pagePath": "pages/invite/index",
+        "text": "邀请函",
+        "iconPath": "images/icons/invite.png",
+        "selectedIconPath": "images/icons/invite.png"
       },
       {
-        "pagePath": "pages/examples/index",
-        "text": "云开发示例",
-        "iconPath": "images/icons/examples.png",
-        "selectedIconPath": "images/icons/examples-active.png"
+        "pagePath": "pages/story/index",
+        "text": "听故事",
+        "iconPath": "images/icons/story.png",
+        "selectedIconPath": "images/icons/story.png"
       },
       {
-        "pagePath": "pages/user-center/index",
-        "text": "我",
-        "iconPath": "images/icons/usercenter.png",
-        "selectedIconPath": "images/icons/usercenter-active.png"
+        "pagePath": "pages/photo/index",
+        "text": "看照片",
+        "iconPath": "images/icons/photo.png",
+        "selectedIconPath": "images/icons/photo.png"
+      },
+      {
+        "pagePath": "pages/navigation/index",
+        "text": "找导航",
+        "iconPath": "images/icons/navigation.png",
+        "selectedIconPath": "images/icons/navigation.png"
       }
     ]
   }
