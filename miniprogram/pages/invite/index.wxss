@@ -10,4 +10,10 @@
 
 .content {
   position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.title image {
+  margin: 120rpx 0 70rpx;
+  width: 100%;
 }

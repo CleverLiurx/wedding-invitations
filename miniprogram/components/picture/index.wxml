@@ -1,0 +1,5 @@
+<!--components/picture/index.wxml-->
+<view class="picture" style="background-image: url('../../images/picture-bg.png');padding: {{gap}}rpx; padding-bottom: {{gap - 10}}rpx;">
+  <slot></slot>
+  <view></view>
+</view>

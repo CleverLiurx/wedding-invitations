@@ -7,5 +7,20 @@
 </view>
 <ui-music></ui-music>
 <view class="content">  
-  <view>xxx</view>
+  <view class="title">
+    <image src="../../images/see_you.png" mode="widthFix"/>
+  </view>
+  <view>
+    <ui-picture>
+      <image src="../../images/demo-long.png" mode="widthFix"/>
+    </ui-picture>
+  </view>
+  <view>
+    somthing
+  </view>
+  <view>
+    <ui-picture>
+      <image src="../../images/demo-short.png" mode="widthFix"/>
+    </ui-picture>
+  </view>
 </view>
