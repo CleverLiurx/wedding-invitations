@@ -1,6 +1,7 @@
 /* components/picture/index.wxss */
 .picture {
   width: 100%;
+  background-color: #ECE7E2;
   box-sizing: border-box;
   overflow: hidden;
 }

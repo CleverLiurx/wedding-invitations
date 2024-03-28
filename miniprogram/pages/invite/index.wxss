@@ -17,3 +17,54 @@
   margin: 120rpx 0 70rpx;
   width: 100%;
 }
+.info {
+  margin: 150rpx 30rpx;
+  padding: 100rpx 0;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 28rpx;
+}
+.info .title {
+  font-weight: bold;
+  font-size: 32rpx;
+  margin: 100rpx 0 30rpx;
+}
+.map {
+  width: 80%;
+  margin: 40rpx 10% 10rpx;
+  height: 350rpx;
+}
+.tip {
+  font-size: 22rpx;
+  margin-bottom: 40rpx;
+}
+.avatar {
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.avatar.phone {
+  margin-top: 20rpx;
+  margin-bottom: 120rpx;
+}
+.avatar view {
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 50%;
+  border: 8rpx solid #FFF;
+}
+.avatar.phone view {
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #FFFFFF;
+  font-size: 26rpx;
+  font-weight: bolder;
+  background-color: #333333;
+  border-radius: 40rpx;
+  border: 0;
+}
+.avatar view image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

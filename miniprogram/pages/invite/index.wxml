@@ -1,26 +1,85 @@
 <!--pages/invite/index.wxml-->
+<!-- 背景 -->
 <view class="background">
   <image src="../../images/bg/1.png" mode="widthFix"/>
   <image src="../../images/bg/2.png" mode="widthFix"/>
   <image src="../../images/bg/3.png" mode="widthFix"/>
   <image src="../../images/bg/4.png" mode="widthFix"/>
 </view>
+<!-- 音乐播放器 -->
 <ui-music></ui-music>
+<!-- 邀请函主体 -->
 <view class="content">  
+  <!-- 好久不见 -->
   <view class="title">
     <image src="../../images/see_you.png" mode="widthFix"/>
   </view>
+  <!-- 第一张图片 -->
   <view>
     <ui-picture>
-      <image src="../../images/demo-long.png" mode="widthFix"/>
+      <image src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/demo-long.png" mode="widthFix"/>
+    </ui-picture>
+  </view>
+  <!-- 婚礼邀请 -->
+  <view class="info">
+    <ui-picture>
+      <view class="title">- 婚 礼 邀 请 -</view>
+      <view>刘容新 & 石蕊</view>
+      <view>偕同我们的父母</view>
+      <view>诚邀您参加我们的婚礼仪式</view>
+      <view>分享我们的幸福时刻</view>
+      <view class="title">- 婚 礼 时 间 -</view>
+      <view>2024年10月04日</view>
+      <view>甲辰龙年 九月初二</view>
+      <view>分享我们的幸福时刻</view>
+      <view>07:00｜迎亲仪式</view>
+      <view>09:30｜迎亲仪式</view>
+      <view>09:30｜迎亲仪式</view>
+      <view>09:30｜迎亲仪式</view>
+      <view>09:30｜迎亲仪式</view>
+      <view class="title">- 婚 礼 地 点 -</view>
+      <view>新郎家</view>
+      <view>承德市兴隆县大杖子镇邢杖子村杨树沟</view>
+      <map
+        class="map"
+        longitude="{{markers1.longitude}}"
+        latitude="{{markers1.latitude}}"
+        markers="{{[markers1]}}"
+        bind:tap="gotoYSG"
+        bind:markertap="gotoYSG"
+        show-location
+      />
+      <view class="tip">⬆点击上方地图一键导航至新郎家</view>
+      <view>婚礼堂</view>
+      <view>承德市承德县唐韵大酒店</view>
+      <map
+        class="map"
+        longitude="{{markers2.longitude}}"
+        latitude="{{markers2.latitude}}"
+        markers="{{[markers2]}}"
+        bind:tap="gotoTY"
+        bind:markertap="gotoTY"
+        show-location
+      />
+      <view class="tip">⬆点击上方地图一键导航至婚礼堂</view>
+      <view class="title">- 联 系 我 们 -</view>
+      <view class="avatar">
+        <view>
+          <image src="../../images/avatar2.png" mode="scaleToFill"/>
+        </view>
+        <view>
+          <image src="../../images/avatar1.png" mode="scaleToFill"/>
+        </view>
+      </view>
+      <view class="avatar phone">
+        <view bind:tap="phoneToSR">☏ 联系新娘</view>
+        <view bind:tap="phoneToLRX">☏ 联系新郎</view>
+      </view>
     </ui-picture>
   </view>
   <view>
-    somthing
-  </view>
-  <view>
     <ui-picture>
-      <image src="../../images/demo-short.png" mode="widthFix"/>
+      <image src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/demo-short.png" mode="widthFix"/>
     </ui-picture>
   </view>
 </view>
