@@ -1,1 +1,13 @@
 /* pages/invite/index.wxss */
+.background {
+  position: absolute;
+  width: 100%;
+}
+.background > image {
+  width: 100%;
+  vertical-align: top;
+}
+
+.content {
+  position: relative;
+}

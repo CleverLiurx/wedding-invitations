@@ -1,0 +1,53 @@
+/* components/music/index.wxss */
+.music {
+  position: fixed;
+  z-index: 101;
+  display: flex;
+  right: 30rpx;
+  top: 30rpx;
+}
+.music-icon{
+  width: 60rpx;
+  height: 60rpx;
+}
+.music-play{
+  width: 28rpx;
+  height: 60rpx;
+  margin-left: -10rpx;
+  transform-origin:top;
+}
+.play .music-icon {
+  animation: musicRotate 3s linear infinite;
+}
+.play .music-play{
+  transform: rotate(20deg);
+  transition: transform 1s linear;
+}
+.pause .music-play{
+  transform: rotate(0deg);
+  transition: transform 1s linear;
+}
+@keyframes musicStop {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes musicStart {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+@keyframes musicRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

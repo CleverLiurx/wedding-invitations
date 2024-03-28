@@ -1,18 +1,41 @@
 // app.js
+const Event = require('./utils/event')
 App({
   onLaunch: function () {
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力');
     } else {
       wx.cloud.init({
-        // env 参数说明：
-        //   env 参数决定接下来小程序发起的云开发调用（wx.cloud.xxx）会默认请求到哪个云环境的资源
-        //   此处请填入环境 ID, 环境 ID 可打开云控制台查看
-        //   如不填则使用默认环境（第一个创建的环境）
-        // env: 'my-env-id',
+        env: 'cloud1-7gmcl9gy8f6410db',
         traceUser: true,
       });
     }
+
+    const audio = wx.createInnerAudioContext({
+      useWebAudioImplement: false
+    })
+    audio.onPlay(() => {
+      Event.emit('music:status', true)
+    })
+    audio.onStop(() => {
+      Event.emit('music:status', false)
+    })
+    audio.onPause(() => {
+      Event.emit('music:status', false)
+    })
+    audio.src = 'cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/kwlink_d_out.mp3'
+    audio.autoplay = true
+    audio.loop = true
+    Event.on('music:status', play => {
+      if (play) {
+        audio.play()
+      } else {
+        audio.pause()
+      }
+    })
+    Event.on('music:getStatus', () => {
+      Event.emit('music:status', !audio.paused)
+    })
 
     this.globalData = {};
   }

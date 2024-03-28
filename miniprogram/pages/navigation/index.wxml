@@ -1,4 +1,5 @@
 <!--pages/navigation/index.wxml-->
+<ui-music></ui-music>
 <view>寒暄几句</view>
 <view>婚礼当天安排时间线</view>
 <view>我家位置</view>

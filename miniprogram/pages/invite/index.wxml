@@ -1,6 +1,11 @@
 <!--pages/invite/index.wxml-->
-<view>我们结婚啦</view>
-<view>来张照片</view>
-<view>寒暄几句</view>
-<view>时间地点</view>
-<view>联系方式</view>
+<view class="background">
+  <image src="../../images/bg/1.png" mode="widthFix"/>
+  <image src="../../images/bg/2.png" mode="widthFix"/>
+  <image src="../../images/bg/3.png" mode="widthFix"/>
+  <image src="../../images/bg/4.png" mode="widthFix"/>
+</view>
+<ui-music></ui-music>
+<view class="content">  
+  <view>xxx</view>
+</view>

@@ -1,18 +1,6 @@
 {
   "pages": [
     "pages/invite/index",
-    "pages/index/index",
-    "pages/goods-list/index",
-    "pages/examples/index",
-    "pages/user-center/index",
-    "pages/exampleDetail/index",
-    "pages/deployService/index",
-    "pages/updateRecord/index",
-    "pages/updateRecordResult/index",
-    "pages/updateRecordSuccess/index",
-    "pages/sumRecord/index",
-    "pages/sumRecordResult/index",
-    "pages/web/index",
     "pages/story/index",
     "pages/photo/index",
     "pages/navigation/index"
@@ -23,6 +11,10 @@
     "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTitleText": "刘容新 & 石蕊",
     "navigationBarTextStyle": "black"
+  },
+  "resolveAlias": {
+    "@/utils/*": "utils/*",
+    "@/images/*": "images/*"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
@@ -52,7 +44,7 @@
       },
       {
         "pagePath": "pages/navigation/index",
-        "text": "找导航",
+        "text": "碎碎念",
         "iconPath": "images/icons/navigation.png",
         "selectedIconPath": "images/icons/navigation.png"
       }
