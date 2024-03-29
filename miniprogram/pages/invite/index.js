@@ -17,7 +17,8 @@ Page({
         content: "开始导航",
         color: '#FFF',
         bgColor: '#000',
-        textAlign: 'center',
+        fontSize: 12,
+        anchorX: -24
       }
     },
     markers2: {
@@ -34,7 +35,8 @@ Page({
         content: "开始导航",
         color: '#FFF',
         bgColor: '#000',
-        textAlign: 'center'
+        fontSize: 12,
+        anchorX: -24
       }
     }
   },
