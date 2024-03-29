@@ -14,3 +14,7 @@ button::after{
 page {
   background: #ffffff;
 }
+
+view {
+  font-size: 30rpx;
+}

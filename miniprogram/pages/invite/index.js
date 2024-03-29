@@ -1,10 +1,7 @@
 // pages/invite/index.js
 import { share5x4, share1x1 } from '@/utils/index'
+const Event = require('../../utils/event')
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     markers1: {
       id: 1,
@@ -16,6 +13,12 @@ Page({
       posName: '新郎家',
       address: '河北省承德市兴隆县大杖子镇邢杖子村杨树沟',
       phone: '13131451002',
+      label: {
+        content: "开始导航",
+        color: '#FFF',
+        bgColor: '#000',
+        textAlign: 'center',
+      }
     },
     markers2: {
       id: 2,
@@ -27,14 +30,13 @@ Page({
       posName: '婚礼堂',
       address: '河北省承德市承德县唐韵大酒店',
       phone: '15733181121',
+      label: {
+        content: "开始导航",
+        color: '#FFF',
+        bgColor: '#000',
+        textAlign: 'center'
+      }
     }
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
   },
   gotoYSG() {
     const { latitude, longitude, posName, address } = this.data.markers1
@@ -64,47 +66,8 @@ Page({
       phoneNumber: this.data.markers1.phone
     })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
+  handleVideoPlay() {
+    Event.emit('music:status', false)
   },
 
   /**
@@ -113,7 +76,9 @@ Page({
   onShareAppMessage() {
     return share5x4
   },
-
+  /**
+   * 用户点击分享到朋友圈
+   */
   onShareTimeline() {
     return share1x1
   }

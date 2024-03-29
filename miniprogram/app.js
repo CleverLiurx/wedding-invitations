@@ -24,7 +24,7 @@ App({
       Event.emit('music:status', false)
     })
     audio.src = 'cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/kwlink_d_out.mp3'
-    audio.volume = 0.5
+    // audio.volume = 0.5
     audio.autoplay = true
     audio.loop = true
     Event.on('music:status', play => {

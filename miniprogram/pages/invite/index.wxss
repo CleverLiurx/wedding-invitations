@@ -1,37 +1,87 @@
 /* pages/invite/index.wxss */
-.background {
-  position: absolute;
-  width: 100%;
-}
-.background > image {
-  width: 100%;
-  vertical-align: top;
-}
-
 .content {
   position: relative;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
-.title image {
-  margin: 120rpx 0 70rpx;
-  width: 100%;
+/* 音乐 */
+.music {
+  background-color: #F5F5F5;
+  border-radius: 20rpx;
+  display: flex;
+  margin-top: 120rpx;
+  justify-content: space-between;
+  align-items: center;
 }
+.music .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20rpx;
+  gap: 20rpx;
+}
+.music .left view:first-child {
+  display: flex;
+}
+.left .music-name {
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+.left .user {
+  font-size: 24rpx;
+  color: #333333;
+  padding-left: 60rpx;
+}
+.music .left image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.music .right {
+  margin: 15rpx 20rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 15rpx;
+}
+/* 婚礼邀请函 */
+.invitation image {
+  height: 160rpx;
+  width: 100%;
+  margin: 50rpx 0;
+}
+/* 视频 */
+.video {
+  width: 100%;
+  height: 380rpx;
+  border-radius: 15rpx;
+}
+/* 婚礼详细信息 */
 .info {
-  margin: 150rpx 30rpx;
-  padding: 100rpx 0;
+  margin: 70rpx 0;
+}
+.info view {
+  font-size: 26rpx;
   text-align: center;
   font-weight: lighter;
-  font-size: 28rpx;
 }
 .info .title {
   font-weight: bold;
   font-size: 32rpx;
-  margin: 100rpx 0 30rpx;
+  margin: 30rpx 0;
+}
+.title.connect {
+  margin-top: 40rpx;
+}
+.map-wrap {
+  border-radius: 15rpx;
+  padding: 20rpx;
+  margin: 20rpx 20rpx 50rpx;
+  box-shadow: 0 0 4px rgb(83, 82, 82);
+}
+.map-wrap view {
+  text-align: left;
 }
 .map {
-  width: 80%;
-  margin: 40rpx 10% 10rpx;
+  width: 100%;
   height: 350rpx;
 }
 .tip {
@@ -54,8 +104,8 @@
   border: 8rpx solid #FFF;
 }
 .avatar.phone view {
-  height: 80rpx;
-  line-height: 80rpx;
+  height: 70rpx;
+  line-height: 70rpx;
   color: #FFFFFF;
   font-size: 26rpx;
   font-weight: bolder;
@@ -67,4 +117,33 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+/* 温馨提示 */
+.tips view {
+  font-size: 26rpx;
+  font-weight: lighter;
+}
+.tips .title {
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 32rpx;
+  padding: 5rpx 12rpx;
+  background-color: #999999;
+  margin-bottom: 20rpx;
+}
+.tips .gap {
+  height: 30rpx;
+}
+.ending {
+  height: 200rpx;
+  margin: 50rpx 0;
+  width: 100%;
+}
+.thanks, .end {
+  text-align: center;
+  font-weight: bolder;
+  color: #CCC;
+}
+.end {
+  padding-bottom: 70rpx;
 }

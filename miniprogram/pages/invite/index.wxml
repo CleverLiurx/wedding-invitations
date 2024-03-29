@@ -1,43 +1,49 @@
 <!--pages/invite/index.wxml-->
-<!-- 背景 -->
-<view class="background">
-  <image src="../../images/bg/1.png" mode="widthFix"/>
-  <image src="../../images/bg/2.png" mode="widthFix"/>
-  <image src="../../images/bg/3.png" mode="widthFix"/>
-  <image src="../../images/bg/4.png" mode="widthFix"/>
-</view>
-<!-- 音乐播放器 -->
-<ui-music></ui-music>
-<!-- 邀请函主体 -->
 <view class="content">  
-  <!-- 好久不见 -->
-  <view class="title">
-    <image src="../../images/see_you.png" mode="widthFix"/>
+  <ui-music></ui-music>
+  <!-- 音乐 -->
+  <view class="music">
+    <view class="left">
+      <view>
+        <image src="../../images/music.png" />
+        <text class="music-name">奢香夫人</text>
+      </view>
+      <view class="user">
+        演唱: 刘容新 石蕊
+      </view>
+    </view>
+    <image class="right" src="../../images/we.png" />
   </view>
-  <!-- 第一张图片 -->
-  <view>
-    <ui-picture>
-      <image src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/demo-long.png" mode="widthFix"/>
-    </ui-picture>
+  <!-- 婚礼邀请函 -->
+  <view class="invitation">
+    <image src="../../images/invite.png" mode="aspectFit"/>
   </view>
+  <!-- 视频 -->
+  <video
+    class="video"
+    bindplay="handleVideoPlay"
+    src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/invite-video.mp4"
+  />
   <!-- 婚礼邀请 -->
   <view class="info">
-    <ui-picture>
-      <view class="title">- 婚 礼 邀 请 -</view>
-      <view>刘容新 & 石蕊</view>
-      <view>偕同我们的父母</view>
-      <view>诚邀您参加我们的婚礼仪式</view>
-      <view>分享我们的幸福时刻</view>
-      <view class="title">- 婚 礼 时 间 -</view>
-      <view>2024年10月04日</view>
-      <view>甲辰龙年 九月初二</view>
-      <view>分享我们的幸福时刻</view>
-      <view>07:00｜迎亲仪式</view>
-      <view>09:30｜迎亲仪式</view>
-      <view>09:30｜迎亲仪式</view>
-      <view>09:30｜迎亲仪式</view>
-      <view>09:30｜迎亲仪式</view>
-      <view class="title">- 婚 礼 地 点 -</view>
+    <view>2018 - 2024</view>
+    <view class="title">我们不只有七年 还有很多年</view>
+    <view>刘容新 & 石蕊</view>
+    <view>偕同我们的父母</view>
+    <view>诚邀您参加我们的婚礼仪式</view>
+    <view>分享我们的幸福时刻</view>
+    <view class="title">婚 礼 时 间</view>
+    <view>2024年10月04日</view>
+    <view>甲辰龙年 九月初二</view>
+    <view>分享我们的幸福时刻</view>
+    <view>07:00｜迎亲仪式</view>
+    <view>09:30｜迎亲仪式</view>
+    <view>09:30｜迎亲仪式</view>
+    <view>09:30｜迎亲仪式</view>
+    <view>09:30｜迎亲仪式</view>
+    <view class="title">婚 礼 地 点</view>
+    <view>点击地图一键导航</view>
+    <view class="map-wrap">    
       <view>新郎家</view>
       <view>承德市兴隆县大杖子镇邢杖子村杨树沟</view>
       <map
@@ -47,9 +53,11 @@
         markers="{{[markers1]}}"
         bind:tap="gotoYSG"
         bind:markertap="gotoYSG"
+        bindlabeltap="gotoYSG"
         show-location
       />
-      <view class="tip">⬆点击上方地图一键导航至新郎家</view>
+    </view>
+    <view class="map-wrap">
       <view>婚礼堂</view>
       <view>承德市承德县唐韵大酒店</view>
       <map
@@ -59,27 +67,35 @@
         markers="{{[markers2]}}"
         bind:tap="gotoTY"
         bind:markertap="gotoTY"
+        bindlabeltap="gotoTY"
         show-location
       />
-      <view class="tip">⬆点击上方地图一键导航至婚礼堂</view>
-      <view class="title">- 联 系 我 们 -</view>
-      <view class="avatar">
-        <view>
-          <image src="../../images/avatar2.png" mode="scaleToFill"/>
-        </view>
-        <view>
-          <image src="../../images/avatar1.png" mode="scaleToFill"/>
-        </view>
+    </view>
+    <view class="title connect">联 系 我 们</view>
+    <view class="avatar">
+      <view>
+        <image src="../../images/avatar2.png" mode="scaleToFill"/>
       </view>
-      <view class="avatar phone">
-        <view bind:tap="phoneToSR">☏ 联系新娘</view>
-        <view bind:tap="phoneToLRX">☏ 联系新郎</view>
+      <view>
+        <image src="../../images/avatar1.png" mode="scaleToFill"/>
       </view>
-    </ui-picture>
+    </view>
+    <view class="avatar phone">
+      <view bind:tap="phoneToSR">☏ 联系新娘</view>
+      <view bind:tap="phoneToLRX">☏ 联系新郎</view>
+    </view>
   </view>
-  <view>
-    <ui-picture>
-      <image src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/demo-short.png" mode="widthFix"/>
-    </ui-picture>
+  <!-- 温馨提示 -->
+  <view class="tips">
+    <view class="title">温馨tips:</view>
+    <view>请预留好2024年10月4号这一天的行程</view>
+    <view>如果您提前来我们会为您准备住宿</view>
+    <view>请提前告知我们</view>
+    <view class="gap"></view>
+    <view>许久未见  甚是想念</view>
+    <view>我们，婚礼见</view>
   </view>
+  <image class="ending" src="../../images/love.png" mode="aspectFit"/>
+  <view class="thanks">- THANKS -</view>
+  <view class="end">END</view>
 </view>
