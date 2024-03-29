@@ -79,7 +79,7 @@
   border-radius: 15rpx;
   padding: 20rpx;
   margin: 20rpx 20rpx 50rpx;
-  box-shadow: 0 0 4px rgb(83, 82, 82);
+  box-shadow: rgb(153, 153, 153) 0px 0px 8px;
 }
 .map-wrap view {
   text-align: left;

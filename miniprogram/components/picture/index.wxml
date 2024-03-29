@@ -1,5 +1,0 @@
-<!--components/picture/index.wxml-->
-<view class="picture" style="padding: {{gap}}rpx; padding-bottom: {{gap - 10}}rpx;">
-  <slot></slot>
-  <view></view>
-</view>

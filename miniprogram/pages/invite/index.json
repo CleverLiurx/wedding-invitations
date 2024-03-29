@@ -1,7 +1,6 @@
 {
   "navigationBarTitleText": "刘容新 & 石蕊",
   "usingComponents": {
-    "ui-music": "/components/music/index",
-    "ui-picture": "/components/picture/index"
+    "ui-music": "/components/music/index"
   }
 }

@@ -1,7 +1,41 @@
 <!--pages/story/index.wxml-->
 <ui-music></ui-music>
-<view>寒暄几句</view>
-<view>2018年</view>
-<view>照片</view>
-<view>2019年</view>
-<view>照片</view>
+<view class="content">
+  <!-- 我把另一半介绍给你 -->
+  <image class="title-image" src="../../images/he.png" mode="aspectFit"/>
+  <!-- 头部 -->
+  <view class="header">
+    <image class="bg" src="/images/story-main.png" mode="aspectFill"/>
+    <view class="label">
+      <image class="image-1" src="../../images/story-label-1.png" mode=""/>
+      <image class="image-2" src="../../images/story-label-2.png" mode="aspectFit"/>
+      <text class="xi">囍</text>
+    </view>
+    <view class="text">
+      <view class="name-plain">刘容新 & 石蕊</view>
+      <view class="plain">2024.10.04</view>
+      <view class="plain">我们终于交卷啦</view>
+    </view>
+  </view>
+  <!-- 一段话 -->
+  <view class="tc">
+    <view>我们将于2024年10月04日这一天，</view>
+    <view>将携手走过的无数个日夜</view>
+    <view>续约至无限个互相陪伴的时刻。</view>
+  </view>
+  <!-- loding gif -->
+  <image class="loading" src="/images/loading.gif" mode="aspectFit"/>
+  <!-- 月亮 -->
+  <view class="moon">
+    <image src="../../images/moon-1.png" 	show-menu-by-longpress mode="aspectFit"/>
+    <image src="../../images/moon-2.png" 	show-menu-by-longpress mode="aspectFit"/>
+  </view>
+  <view class="tc">
+    <view>出生时的月亮</view>
+    <view>Random luck in universe</view>
+    <view>宇宙间相遇的浪漫</view>
+  </view>
+  <view style="color: red">
+    开始按照时间节点 照片 + 叙述
+  </view>
+</view>

@@ -1,1 +1,89 @@
 /* pages/story/index.wxss */
+.content {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 100rpx;
+}
+.content view {
+  font-size: 26rpx;
+}
+.tc {
+  text-align: center;
+}
+.tc > view {
+  margin-top: 20rpx;
+}
+/* 我把另一半介绍给你 */
+.title-image {
+  width: 80%;
+  height: 150rpx;
+  margin: 70rpx 10% 0rpx;
+}
+/* 头部 */
+.header {
+  position: relative;
+  height: 800rpx;
+}
+.header .bg {
+  width: 100%;
+  height: 450rpx;
+}
+.header .label {
+  width: 240rpx;
+  height: 500rpx;
+  background-color: #fff;
+  border-radius: 120rpx;
+  position: absolute;
+  top: 200rpx;
+  left: 50rpx;
+  box-shadow: rgb(153, 153, 153) 0px 0px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .label image {
+  width: calc(100% - 40rpx);
+}
+.header .label .image-1 {
+  border-top-left-radius: calc(100% - 40rpx);
+  border-top-right-radius: calc(100% - 40rpx);
+  margin-top: 20rpx;
+  height: 225rpx;
+}
+.header .label .image-2 {
+  height: 80rpx;
+  margin-top: 10rpx;
+}
+.header .label .xi {
+  color: rgb(133, 22, 14);
+  font-size: 100rpx;
+  padding-bottom: 10rpx;
+}
+.header .text {
+  position: absolute;
+  margin-top: 40rpx;
+  right: 50rpx;
+  text-align: center;
+}
+.header .name-plain {
+  font-weight: bolder;
+  font-size: 32rpx;
+}
+.header .plain {
+  margin-top: 10rpx;
+}
+/* 加载gif */
+.loading {
+  width: 100%;
+  height: 180rpx;
+}
+/* 月亮 */
+.moon {
+  display: flex;
+  justify-content: space-around;
+}
+.moon image{
+  width: 45%;
+}
