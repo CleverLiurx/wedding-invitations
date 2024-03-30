@@ -26,26 +26,26 @@
   />
   <!-- 婚礼邀请 -->
   <view class="info">
-    <view>2018 - 2024</view>
+    <view class="text">2018 - 2024</view>
     <view class="title">我们不只有七年 还有很多年</view>
-    <view>刘容新 & 石蕊</view>
-    <view>偕同我们的父母</view>
-    <view>诚邀您参加我们的婚礼仪式</view>
-    <view>分享我们的幸福时刻</view>
+    <view class="text">刘容新 & 石蕊</view>
+    <view class="text">偕同我们的父母</view>
+    <view class="text">诚邀您参加我们的婚礼仪式</view>
+    <view class="text">分享我们的幸福时刻</view>
     <view class="title">婚 礼 时 间</view>
-    <view>2024年10月04日</view>
-    <view>甲辰龙年 九月初二</view>
+    <view class="text">2024年10月04日</view>
+    <view class="text">甲辰龙年 九月初二</view>
     <image class="calendar" src="../../images/calendar.png" mode="aspectFit"/>
-    <view>06:50 出发接亲</view>
-    <view>07:25 到达新娘家</view>
-    <view>08:00 出发返回新郎家</view>
-    <view>08:35 到达新郎家</view>
-    <view>10:00 集合去婚礼堂</view>
-    <view>10:35 到达婚礼堂</view>
-    <view>10:55 开始婚礼</view>
-    <view>11:30 重头戏-开饭</view>
+    <view class="text">06:50 出发接亲</view>
+    <view class="text">07:25 到达新娘家</view>
+    <view class="text">08:00 出发返回新郎家</view>
+    <view class="text">08:35 到达新郎家</view>
+    <view class="text">10:00 集合去婚礼堂</view>
+    <view class="text">10:35 到达婚礼堂</view>
+    <view class="text">10:55 开始婚礼</view>
+    <view class="text">11:30 重头戏-开饭</view>
     <view class="title">婚 礼 地 点</view>
-    <view>点击地图一键导航</view>
+    <view class="text">点击地图一键导航</view>
     <view class="map-wrap">    
       <view>新郎家</view>
       <view>承德市兴隆县大杖子镇邢杖子村杨树沟</view>
@@ -74,8 +74,8 @@
         show-location
       />
     </view>
-    <view>如果您到兴隆县西站、承德南站或承德机场</view>
-    <view>请提前告诉我们，一定准时去接您</view>
+    <view class="text">如果您到兴隆县西站、承德南站或承德机场</view>
+    <view class="text">请提前告诉我们，一定准时去接您</view>
     <view class="title connect">联 系 我 们</view>
     <view class="avatar">
       <view>

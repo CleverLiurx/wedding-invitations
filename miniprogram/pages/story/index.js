@@ -1,12 +1,13 @@
 // pages/story/index.js
 import { share5x4, share1x1 } from '@/utils/index'
+import stories from '@/utils/stories'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    stories,
   },
 
   /**

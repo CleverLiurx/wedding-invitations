@@ -17,25 +17,35 @@
       <view class="plain">我们终于交卷啦</view>
     </view>
   </view>
-  <!-- 一段话 -->
-  <view class="tc">
-    <view>我们将于2024年10月04日这一天，</view>
-    <view>将携手走过的无数个日夜</view>
-    <view>续约至无限个互相陪伴的时刻。</view>
-  </view>
-  <!-- loding gif -->
-  <image class="loading" src="/images/loading.gif" mode="aspectFit"/>
   <!-- 月亮 -->
-  <view class="moon">
-    <image src="../../images/moon-1.png" 	show-menu-by-longpress mode="aspectFit"/>
-    <image src="../../images/moon-2.png" 	show-menu-by-longpress mode="aspectFit"/>
-  </view>
   <view class="tc">
     <view>出生时的月亮</view>
     <view>Random luck in universe</view>
     <view>宇宙间相遇的浪漫</view>
   </view>
-  <view style="color: red">
-    开始按照时间节点 照片 + 叙述
+  <view class="moon">
+    <image src="../../images/moon-1.jpg" mode="widthFix"/>
+    <image src="../../images/moon-2.jpg" mode="widthFix"/>
+    <view class="birthday">丙子鼠年 九月初十</view>
+    <view class="birthday">乙亥猪年 润八月初七</view>
   </view>
+  <!-- 我们的故事 -->
+  <view class="our-story {{s.class}}" wx:for="{{stories}}" wx:for-item="s" wx:key="unique">
+    <text class="our-story-title" wx:if="{{s.title&&s.title.length>0}}">{{s.title}}</text>
+    <text class="our-story-subtitle" wx:for="{{s.subtitles}}" wx:for-item="st" wx:key="unique">{{st}}</text>
+    <view class="story-img-wrap {{s.imageView}}">
+        <image class="story-img-item-{{imx+1}}" data-src="{{im.src}}" lazyLoad="true" mode="{{im.mode}}" src="{{im.src}}" wx:for="{{s.images}}" wx:for-index="imx" wx:for-item="im" wx:key="unique"></image>
+    </view>
+  </view>
+  <!-- 一段话 -->
+  <view class="tc">
+    <view>相识十年</view>
+    <view>恋爱七载</view>
+    <view>有哭有笑 有吵有闹</view>
+    <view>相伴的每一天都是我们的独家记忆</view>
+    <view>未来长长的路</view>
+    <view>我陪你慢慢的走</view>
+    <image class="flower" src="/images/flower.png" mode="aspectFit"/>
+  </view>
+  <!-- loding gif -->
 </view>

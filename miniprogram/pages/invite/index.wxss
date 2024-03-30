@@ -58,15 +58,18 @@
 .info {
   margin: 70rpx 0;
 }
-.info view {
+.info .text {
   font-size: 26rpx;
   text-align: center;
-  font-weight: lighter;
+  margin: 15rpx 0;
+  color: #6D727F;
+  /* font-weight: lighter; */
 }
 .info .title {
+  text-align: center;
   font-weight: bold;
   font-size: 32rpx;
-  margin: 30rpx 0;
+  margin: 40rpx 0;
 }
 .title.connect {
   margin-top: 40rpx;
@@ -80,9 +83,11 @@
   padding: 20rpx;
   margin: 20rpx 20rpx 50rpx;
   box-shadow: rgb(153, 153, 153) 0px 0px 8px;
+  color: #6D727F;
 }
 .map-wrap view {
   text-align: left;
+  font-size: 26rpx;
 }
 .map {
   width: 100%;
@@ -100,6 +105,7 @@
 .avatar.phone {
   margin-top: 20rpx;
   margin-bottom: 120rpx;
+  text-align: center;
 }
 .avatar view {
   width: 220rpx;
@@ -125,9 +131,11 @@
 /* 温馨提示 */
 .tips view {
   font-size: 26rpx;
-  font-weight: lighter;
+  color: #6D727F;
+  /* font-weight: lighter; */
 }
 .tips .title {
+  color: #000;
   display: inline-block;
   font-weight: bolder;
   font-size: 32rpx;
