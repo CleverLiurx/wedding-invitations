@@ -10,13 +10,13 @@ Page({
     album,
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
 
+  navigate(event) {
+    const { name, cnName } = event.currentTarget.dataset
+    wx.navigateTo({
+      url: `/pages/photo/index?name=${name}&cnName=${cnName}`,
+    })
   },
-
   /**
    * 用户点击右上角分享
    */

@@ -2,7 +2,8 @@
   "pages": [
     "pages/invite/index",
     "pages/story/index",
-    "pages/album/index"
+    "pages/album/index",
+    "pages/photo/index"
   ],
   "window": {
     "backgroundColor": "#FF0000",

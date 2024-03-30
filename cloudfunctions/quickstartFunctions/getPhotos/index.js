@@ -5,6 +5,7 @@ const db = cloud.database();
 
 exports.main = async (event, context) => {
   const result = await db.collection('photos')
+    .where({ category: event.category })
     .get();
   return {
     photos: result,

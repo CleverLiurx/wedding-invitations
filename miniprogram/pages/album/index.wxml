@@ -9,7 +9,15 @@
   </view>
   <!-- 相册 -->
   <view class="album">
-    <view class="album-item {{al.pos}}" wx:for="{{album}}" wx:for-item="al" wx:key="unique">
+    <view
+      class="album-item {{al.pos}}"
+      wx:for="{{album}}"
+      wx:for-item="al"
+      wx:key="unique"
+      bind:tap="navigate"
+      data-name="{{al.name}}"
+      data-cn-name="{{al.cnName}}"
+    >
       <image class="album-logo" src="{{al.cover}}" mode="aspectFit"/>
       <view wx:if="{{al.descriptionImage}}" class="album-des {{al.pos}}">
         <view class="text">{{al.description}}</view>

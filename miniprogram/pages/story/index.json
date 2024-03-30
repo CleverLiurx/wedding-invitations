@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "我们的故事",
   "usingComponents": {
     "ui-music": "/components/music/index"
   }
