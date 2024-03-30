@@ -47,5 +47,4 @@
     <view>我陪你慢慢的走</view>
     <image class="flower" src="/images/flower.png" mode="aspectFit"/>
   </view>
-  <!-- loding gif -->
 </view>

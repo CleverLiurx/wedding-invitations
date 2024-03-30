@@ -2,7 +2,11 @@
 import { share5x4, share1x1 } from '@/utils/index'
 const Event = require('../../utils/event')
 Page({
+  onLoad() {
+    this.getSuperConfig()
+  },
   data: {
+    showVideo: false,
     markers1: {
       id: 1,
       latitude: 40.621998,
@@ -70,6 +74,16 @@ Page({
   },
   handleVideoPlay() {
     Event.emit('music:status', false)
+  },
+  async getSuperConfig() {
+    const res = await wx.cloud.callFunction({
+      name: 'quickstartFunctions',
+      data: { type: 'getSuperConfig' },
+    });
+    const showVideo = res?.result?.video?.data?.[0].show || false
+    this.setData({
+      showVideo,
+    })
   },
 
   /**

@@ -1,0 +1,33 @@
+<!--pages/photo/index.wxml-->
+<ui-music></ui-music>
+<view class="content">
+  <image class="title-image" src="/images/moment.png" mode="aspectFit"/>
+  <!-- 开头语 -->
+  <view class="tc">
+    <view> If the sun were to rise in the west,</view>
+    <view>I'd never change my mind to love you forever.</view>
+  </view>
+  <!-- 相册 -->
+  <view class="album">
+    <view class="album-item {{al.pos}}" wx:for="{{album}}" wx:for-item="al" wx:key="unique">
+      <image class="album-logo" src="{{al.cover}}" mode="aspectFit"/>
+      <view wx:if="{{al.descriptionImage}}" class="album-des {{al.pos}}">
+        <view class="text">{{al.description}}</view>
+        <image class="image" src="{{al.descriptionImage}}" mode="heightFix"/>
+      </view>
+      <view wx:else  class="album-des no-image {{al.pos}}"> 
+        <view class="text"  wx:for="{{al.description}}" wx:for-item="des" wx:key="unique">{{des}}</view>
+      </view>
+      <view class="tips">点击查看《{{al.cnName}}》相册</view>
+    </view>
+  </view>
+  <!-- 结束语 -->
+  <view class="tc">
+    <view>快门还在不停的按下</view>
+    <view>精彩的瞬间还在不停的被记录着</view>
+    <view>Product manager of this mini program: Shi rui</view>
+    <view>UI design of this mini program: Liu Rongxin</view>
+    <view>Developer of this mini program: Liu Rongxin</view>
+    <image class="marry" src="/images/marry.png" mode="aspectFit"/>
+  </view>
+</view>

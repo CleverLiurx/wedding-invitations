@@ -7,6 +7,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "照片",
+          "pathName": "pages/album/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "故事",
           "pathName": "pages/story/index",
           "query": "",

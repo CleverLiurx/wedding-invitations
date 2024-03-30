@@ -1,0 +1,88 @@
+/* pages/photo/index.wxss */
+.content {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 100rpx;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.title-image {
+  width: 80%;
+  height: 50rpx;
+  margin: 120rpx 10% 20rpx;
+}
+.tc {
+  text-align: center;
+}
+.tc > view {
+  margin-top: 20rpx;
+  color: rgb(126, 50, 36);
+  font-size: 24rpx;
+  font-style: italic;
+}
+
+.album {
+  margin-bottom: 110rpx;
+}
+
+.album-item {
+  height: 280rpx;
+  background-color: rgb(126, 50, 36);
+  margin: 66rpx 0;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.album-item.right {
+  flex-direction: row-reverse;
+}
+.album-logo {
+  margin-left: 30rpx;
+  align-self: flex-end;
+  width: 40%;
+  height: 250rpx;
+}
+.album-des {
+  width: 40%;
+  display: flex;
+  position: relative;
+  align-self: center;
+  justify-content: flex-end;
+}
+.album-des.right {
+  flex-direction: row-reverse;
+}
+.album-des .image {
+  width: 100%;
+  height: 160rpx;
+}
+.album-des .text {
+  text-align: center;
+  height: 160rpx;
+  color: #E4B378;
+  font-weight: bolder;
+  font-size: 30rpx;
+  writing-mode: vertical-lr;
+}
+.album-des.no-image .text {
+  writing-mode: horizontal-tb;
+  height: 60rpx;
+}
+.album-des.no-image {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tips {
+  position: absolute;
+  bottom: -34rpx;
+  color: #6D727F;
+  font-size: 22rpx;
+}
+.tips::before {
+  content: "⬆";
+}
+.marry {
+  margin-top: 100rpx;
+  width: 160rpx;
+  height: 100rpx;
+}

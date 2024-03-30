@@ -2,7 +2,7 @@
   "pages": [
     "pages/invite/index",
     "pages/story/index",
-    "pages/photo/index"
+    "pages/album/index"
   ],
   "window": {
     "backgroundColor": "#FF0000",
@@ -36,7 +36,7 @@
         "selectedIconPath": "images/icons/story.png"
       },
       {
-        "pagePath": "pages/photo/index",
+        "pagePath": "pages/album/index",
         "text": "看照片",
         "iconPath": "images/icons/photo.png",
         "selectedIconPath": "images/icons/photo.png"
