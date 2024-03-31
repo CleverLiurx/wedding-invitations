@@ -1,4 +1,5 @@
 // pages/photo/index.js
+import { share5x4, share1x1 } from '@/utils/index'
 Page({
 
   /**
@@ -97,6 +98,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
+    return share5x4
+  },
 
+  onShareTimeline() {
+    return share1x1
   }
 })
