@@ -77,9 +77,13 @@
   bottom: -34rpx;
   color: #6D727F;
   font-size: 22rpx;
+  display: flex;
+  align-items: center;
 }
-.tips::before {
-  content: "⬆";
+.tips .arrow {
+  width: 22rpx;
+  height: 22rpx;
+  transform: rotate(180deg);
 }
 .marry {
   margin-top: 100rpx;

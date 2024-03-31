@@ -63,7 +63,6 @@
   text-align: center;
   margin: 15rpx 0;
   color: #6D727F;
-  /* font-weight: lighter; */
 }
 .info .title {
   text-align: center;
@@ -71,9 +70,7 @@
   font-size: 32rpx;
   margin: 40rpx 0;
 }
-.title.connect {
-  margin-top: 40rpx;
-}
+
 .calendar {
   width: 100%;
   margin: 20rpx 0;

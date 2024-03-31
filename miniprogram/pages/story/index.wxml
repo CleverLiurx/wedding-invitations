@@ -2,13 +2,13 @@
 <ui-music></ui-music>
 <view class="content">
   <!-- 我把另一半介绍给你 -->
-  <image class="title-image" src="../../images/he.png" mode="aspectFit"/>
+  <image class="title-image" src="../../images/stories/he.png" mode="aspectFit"/>
   <!-- 头部 -->
   <view class="header">
-    <image class="bg" src="/images/story-main.png" mode="aspectFill"/>
+    <image class="bg" src="/images/stories/story-main.png" mode="aspectFill"/>
     <view class="label">
-      <image class="image-1" src="../../images/story-label-1.png" mode=""/>
-      <image class="image-2" src="../../images/story-label-2.png" mode="aspectFit"/>
+      <image class="image-1" src="../../images/stories/story-label-1.png" mode=""/>
+      <image class="image-2" src="../../images/stories/story-label-2.png" mode="aspectFit"/>
       <text class="xi">囍</text>
     </view>
     <view class="text">
@@ -24,8 +24,8 @@
     <view>宇宙间相遇的浪漫</view>
   </view>
   <view class="moon">
-    <image src="../../images/moon-1.jpg" mode="widthFix"/>
-    <image src="../../images/moon-2.jpg" mode="widthFix"/>
+    <image src="../../images/stories/moon-1.jpg" mode="widthFix"/>
+    <image src="../../images/stories/moon-2.jpg" mode="widthFix"/>
     <view class="birthday">丙子鼠年 九月初十</view>
     <view class="birthday">乙亥猪年 润八月初七</view>
   </view>
@@ -45,6 +45,6 @@
     <view>相伴的每一天都是我们的独家记忆</view>
     <view>未来长长的路</view>
     <view>我陪你慢慢的走</view>
-    <image class="flower" src="/images/flower.png" mode="aspectFit"/>
+    <image class="flower" src="/images/stories/flower.png" mode="aspectFit"/>
   </view>
 </view>
