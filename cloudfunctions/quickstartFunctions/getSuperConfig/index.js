@@ -5,10 +5,8 @@ const db = cloud.database();
 
 exports.main = async (event, context) => {
   const result = await db.collection('super_config')
-    .where({ name: 'video' })
+    .where({ name: event.name })
     .get();
-  return {
-    video: result,
-  };
+  return result;
 };
         

@@ -62,9 +62,9 @@ Page({
   async getSuperConfig() {
     const res = await wx.cloud.callFunction({
       name: 'quickstartFunctions',
-      data: { type: 'getSuperConfig' },
+      data: { type: 'getSuperConfig', name: 'video' },
     });
-    const showVideo = res?.result?.video?.data?.[0].show || false
+    const showVideo = res?.result?.data?.[0].value || false
     this.setData({
       showVideo,
     })

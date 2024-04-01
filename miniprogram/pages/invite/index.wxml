@@ -35,11 +35,11 @@
     <!-- 弹幕 -->
     <view class="danmu-wrap">
       <input
-        class="input {{ inputValue.length ? 'hasValue' : '' }}"
+        class="input"
         type="text"
         value="{{inputValue}}"
         placeholder="点此发送弹幕"
-        placeholder-style="font-size: 22rpx"
+        placeholder-style="font-size: 16rpx; color: #FFFFFF"
         confirm-type="send"
         bindinput="handleInput"
         bindconfirm="sendDanmu"

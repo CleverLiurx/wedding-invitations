@@ -1,62 +1,30 @@
 // pages/story/index.js
 import { share5x4, share1x1 } from '@/utils/index'
-import stories from '@/utils/stories'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    stories,
+    stories: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.getSuperConfig()
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
+  async getSuperConfig() {
+    const res = await wx.cloud.callFunction({
+      name: 'quickstartFunctions',
+      data: { type: 'getSuperConfig', name: 'story' },
+    });
+    const stories = res?.result?.data?.[0].value || []
+    this.setData({
+      stories,
+    })
   },
 
   /**

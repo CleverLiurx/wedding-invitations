@@ -51,38 +51,40 @@
 /* 视频 */
 .video-wrap {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .video {
   width: 100%;
   height: 360rpx;
-  border-radius: 15rpx;
+  /* border-radius: 15rpx; */
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
 }
 /* 弹幕 */
 .danmu-wrap {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  background-color: #000000;
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  height: 60rpx;
 }
 .danmu-wrap .input {
   flex-grow: 1;
-  font-size: 22rpx;
-  background-color: #F1F2F3;
-  border-radius: 10rpx;
-  padding: 5rpx 15rpx;
-}
-.danmu-wrap .input.hasValue {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  font-size: 16rpx;
+  color: #FFFFFF;
+  padding: 0 18rpx;
+  height: 100%;
 }
 .danmu-wrap .button {
-  font-size: 22rpx;
-  background-color: #763828;
+  font-size: 16rpx;
   color: #FFFFFF;
-  padding: 0 30rpx;
-  border-top-right-radius: 10rpx;
-  border-bottom-right-radius: 10rpx;
+  padding: 0 35rpx;
   display: flex;
   align-items: center;
+  font-weight: bolder;
 }
 /* 婚礼详细信息 */
 .info {
