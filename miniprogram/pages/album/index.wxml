@@ -35,9 +35,11 @@
   <view class="tc">
     <view>快门还在不停的按下</view>
     <view>精彩的瞬间还在不停的被记录着</view>
-    <view>Product manager of this mini program: Shi rui</view>
-    <view>UI design of this mini program: Liu Rongxin</view>
-    <view>Developer of this mini program: Liu Rongxin</view>
+    <view>Product manager: Shi rui</view>
+    <view>UI designer: Liu Rongxin</view>
+    <view>Developer: Liu Rongxin</view>
+    <view>If you also want this mini program</view>
+    <view>please contact me(Liu Rongxin, groom)</view>
     <image class="marry" src="/images/album/marry.png" mode="aspectFit"/>
   </view>
 </view>
