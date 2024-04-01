@@ -31,4 +31,4 @@ const Event = {
     return events
   }
 }
-module.exports = Event
+export default Event

@@ -1,5 +1,5 @@
 // components/music/index.js
-const Event = require('../../utils/event')
+import Event from '@/utils/event'
 Component({
 
   /**

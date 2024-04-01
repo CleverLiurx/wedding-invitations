@@ -1,5 +1,5 @@
 // app.js
-const Event = require('./utils/event')
+import Event from './utils/event'
 App({
   onLaunch: function () {
     if (!wx.cloud) {

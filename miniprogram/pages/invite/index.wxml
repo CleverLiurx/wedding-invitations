@@ -19,12 +19,40 @@
     <image src="../../images/invite/invite.png" mode="aspectFit"/>
   </view>
   <!-- 视频 -->
-  <video
-    class="video"
-    bindplay="handleVideoPlay"
-    style="height: {{ showVideo ? '' : 0 }};"
-    src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/invite-video.mp4"
-  />
+  <view class="video-wrap" style="height: {{ showVideo ? '' : 0 }};">
+    <video
+      id="video"
+      class="video"
+      bindplay="handleVideoPlay"
+      bindpause="handleVideoPause"
+      bindtimeupdate="handleTimeupdate"
+      src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/invite-video.mp4"
+      enable-play-gesture
+      danmu-btn
+      enable-danmu
+      danmu-list="{{danmuList}}"
+    />
+    <!-- 弹幕 -->
+    <view class="danmu-wrap">
+      <input
+        class="input {{ inputValue.length ? 'hasValue' : '' }}"
+        type="text"
+        value="{{inputValue}}"
+        placeholder="点此发送弹幕"
+        placeholder-style="font-size: 22rpx"
+        confirm-type="send"
+        bindinput="handleInput"
+        bindconfirm="sendDanmu"
+        bindfocus="handleFocus"
+        bindblur="handleBlur"
+      />
+      <view
+        class="button"
+        wx:if="{{ inputValue.length }}"
+        bind:tap="sendDanmu"
+      >发送</view>
+    </view>
+  </view>
   <!-- 婚礼邀请 -->
   <view class="info">
     <view class="text">2018 - 2024</view>
