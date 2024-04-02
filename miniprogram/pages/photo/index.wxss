@@ -15,14 +15,11 @@
 }
 .loading {
   width: 100%;
-  min-height: 90vh;
+  height: calc(100vh - 45px);
+  position: absolute;
+  background-color: #FFF;
 }
 /* 预览图 */
-.photos {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; */
-}
 .photo {
   display: inline-block;
   width: 23vw;

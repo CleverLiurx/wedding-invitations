@@ -34,7 +34,16 @@
     <text class="our-story-title" wx:if="{{s.title&&s.title.length>0}}">{{s.title}}</text>
     <text class="our-story-subtitle" wx:for="{{s.subtitles}}" wx:for-item="st" wx:key="unique">{{st}}</text>
     <view class="story-img-wrap {{s.imageView}}">
-        <image class="story-img-item-{{imx+1}}" data-src="{{im.src}}" lazyLoad="true" mode="{{im.mode}}" src="{{im.src}}" wx:for="{{s.images}}" wx:for-index="imx" wx:for-item="im" wx:key="unique"></image>
+        <image
+          class="story-img-item-{{imx + 1}}"
+          lazy-load
+          mode="{{im.mode}}"
+          src="{{im.src}}"
+          wx:for="{{s.images}}"
+          wx:for-index="imx"
+          wx:for-item="im"
+          wx:key="unique"
+        ></image>
     </view>
   </view>
   <!-- 一段话 -->

@@ -39,8 +39,19 @@ Page({
     this.setData({
       urls,
       photos,
-      loading: false,
     })
+    // 留1.5s加载时间给预览图
+    if (photos.length === 0) {
+      this.setData({
+        loading: false,
+      })
+    } else {
+      setTimeout(() => {
+        this.setData({
+          loading: false,
+        })
+      }, 1500)
+    }
   },
 
   preview(event) {

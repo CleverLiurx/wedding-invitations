@@ -106,20 +106,17 @@
     <view class="text">如果您到兴隆县西站、承德南站或承德机场</view>
     <view class="text">请提前告诉我们，一定准时去接您</view>
     <view class="title">联 系 我 们</view>
-    <view class="text">您有任何问题和想法</view>
-    <view class="text">欢迎联系我们</view>
-    <view class="avatar">
-      <view>
-        <image src="../../images/invite/avatar2.png" mode="scaleToFill"/>
-      </view>
-      <view>
-        <image src="../../images/invite/avatar1.png" mode="scaleToFill"/>
-      </view>
-    </view>
-    <view class="avatar phone">
-      <view bind:tap="phoneToSR">☏ 联系新娘</view>
-      <view bind:tap="phoneToLRX">☏ 联系新郎</view>
-    </view>
+    <view class="text">您有任何问题或者确定了出席人数</view>
+    <view class="text">欢迎直接联系我们</view>
+    <view class="text">当然也可以点击下方按钮给我们留言</view>
+    <button class="connect" open-type="contact" size="mini">
+      <image class="header header1" src="../../images/invite/avatar1.png" mode="heightFix"/>
+      <view class="btn-text">点此留言</view>
+      <image class="header header2" src="../../images/invite/avatar2.png" mode="heightFix"/>
+    </button>
+    <view class="text">平时工作较忙</view>
+    <view class="text">可能无法即时回复</view>
+    <view class="text">望请见谅</view>
   </view>
   <!-- 温馨提示 -->
   <view class="tips">
@@ -133,6 +130,4 @@
     <view>我们，婚礼见</view>
   </view>
   <image class="ending" src="../../images/invite/love.png" mode="aspectFit"/>
-  <view class="thanks">- THANKS -</view>
-  <view class="end">END</view>
 </view>

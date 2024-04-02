@@ -4,8 +4,8 @@
   <image class="title-image" src="/images/album/moment.png" mode="aspectFit"/>
   <!-- 开头语 -->
   <view class="tc">
-    <view> If the sun were to rise in the west,</view>
-    <view>I'd never change my mind to love you forever.</view>
+    <view>快门还在不停的被按下</view>
+    <view>精彩的瞬间还在不停的被记录着</view>
   </view>
   <!-- 相册 -->
   <view class="album">
@@ -33,13 +33,13 @@
   </view>
   <!-- 结束语 -->
   <view class="tc">
-    <view>快门还在不停的按下</view>
-    <view>精彩的瞬间还在不停的被记录着</view>
     <view>Product manager: Shi rui</view>
     <view>UI designer: Liu Rongxin</view>
     <view>Developer: Liu Rongxin</view>
-    <view>If you also want this mini program</view>
-    <view>please contact me(Liu Rongxin, groom)</view>
+    <view>If you also want to use this Mini Program</view>
+    <view>Or if you need the source code</view>
+    <view>Or if you have better suggestions</view>
+    <view>Please contact me (Liu Rongxin, the groom)</view>
     <image class="marry" src="/images/album/marry.png" mode="aspectFit"/>
   </view>
 </view>

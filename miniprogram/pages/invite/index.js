@@ -39,16 +39,6 @@ Page({
       address,
     })
   },
-  phoneToSR() {
-    wx.makePhoneCall({
-      phoneNumber: this.data.markers2.phone
-    })
-  },
-  phoneToLRX() {
-    wx.makePhoneCall({
-      phoneNumber: this.data.markers1.phone
-    })
-  },
   handleVideoPlay() {
     this.play = true
     Event.emit('music:status', false)
