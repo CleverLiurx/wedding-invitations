@@ -37,7 +37,7 @@
   border-radius: 30rpx;
   box-shadow: 0 0 5rpx rgb(73, 71, 71);
 }
-.header .main .content {
+.header .main .headerContent {
   height: 230rpx;
   display: flex;
   flex-direction: column;
@@ -45,16 +45,16 @@
   color: #FFF;
   padding: 0;
 }
-.header .main .content .mini {
+.header .main .headerContent .mini {
   font-size: 24rpx;
   color: rgb(117, 101, 55);
 }
-.header .main .content .mini .order {
+.header .main .headerContent .mini .order {
   color: rgb(117, 101, 55);
   background-color: #DCBC7D;
   padding: 5rpx 15rpx;
 }
-.header .main .content .mini .love {
+.header .main .headerContent .mini .love {
   padding: 5rpx 15rpx;
   color: #FFF;
   background-color: #77653B;

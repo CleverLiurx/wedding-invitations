@@ -3,7 +3,7 @@
   <image class="cover" src="../../images/stories/header-bg.png" mode="aspectFill"/>
   <view class="main">
     <image class="logo" src="../../images/stories/header-main.png" mode="aspectFill"/>
-    <view class="content">
+    <view class="headerContent">
       <text>我们的故事</text>
       <text>Our story (2024)</text>
       <view class="mini">

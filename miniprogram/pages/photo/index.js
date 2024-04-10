@@ -1,5 +1,5 @@
 // pages/photo/index.js
-import { share5x4, share1x1 } from '@/utils/index'
+import album from '@/utils/album'
 Page({
 
   /**
@@ -22,6 +22,10 @@ Page({
       title: cnName
     })
     this.getPhotos(name)
+    const item = album.find(p => p.name === name)
+    this.name = item.name
+    this.cnName = item.cnName
+    this.cover = item.cover
   },
 
   async getPhotos(name) {
@@ -40,7 +44,7 @@ Page({
       urls,
       photos,
     })
-    // 留1.5s加载时间给预览图
+    // 留1s加载时间给预览图
     if (photos.length === 0) {
       this.setData({
         loading: false,
@@ -50,7 +54,7 @@ Page({
         this.setData({
           loading: false,
         })
-      }, 1500)
+      }, 1000)
     }
   },
 
@@ -64,55 +68,14 @@ Page({
   },
 
   /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-    return share5x4
+    const { name, cnName, cover } = this
+    return {
+      title: `刘容新&石蕊的《${cnName}》相册`,
+      path: `pages/photo/index?name=${name}&cnName=${cnName}`,
+      imageUrl: cover,
+    }
   },
-
-  onShareTimeline() {
-    return share1x1
-  }
 })
