@@ -1,65 +1,89 @@
 /* pages/invite/index.wxss */
 .content {
   position: relative;
-  width: 85%;
+  width: 90vmin;
   margin: 0 auto;
-}
-/* 音乐 */
-.music {
-  background-color: #F5F5F5;
-  border-radius: 20rpx;
-  display: flex;
-  margin-top: 120rpx;
-  justify-content: space-between;
-  align-items: center;
-}
-.music .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 20rpx;
-  gap: 20rpx;
-}
-.music .left view:first-child {
-  display: flex;
-}
-.left .music-name {
-  font-size: 30rpx;
-  padding-left: 20rpx;
-}
-.left .user {
-  font-size: 24rpx;
-  color: #333333;
-  padding-left: 60rpx;
-}
-.music .left image {
-  width: 40rpx;
-  height: 40rpx;
-}
-.music .right {
-  margin: 15rpx 20rpx;
-  width: 160rpx;
-  height: 160rpx;
-  border-radius: 15rpx;
 }
 /* 婚礼邀请函 */
 .invitation image {
-  height: 160rpx;
+  height: calc(110vmin / 7.5);
   width: 100%;
-  margin: 50rpx 0;
+  margin: calc(30vmin / 7.5) 0;
+}
+/* 头部 */
+.header {
+  position: relative;
+  height: calc(735vmin / 7.5);
+}
+.header .bg {
+  width: 100%;
+  height: calc(450vmin / 7.5);
+}
+.header .label {
+  width: calc(240vmin / 7.5);
+  height: calc(500vmin / 7.5);
+  background-color: #fff;
+  border-radius: calc(120vmin / 7.5);
+  position: absolute;
+  top: calc(200vmin / 7.5);
+  left: calc(50vmin / 7.5);
+  box-shadow: rgb(153, 153, 153) 0px 0px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .label image {
+  width: calc(100% - 40vmin / 7.5);
+}
+.header .label .image-1 {
+  border-top-left-radius: calc(100% - 40vmin / 7.5);
+  border-top-right-radius: calc(100% - 40vmin / 7.5);
+  margin-top: calc(20vmin / 7.5);
+  height: calc(225vmin / 7.5);
+}
+.header .label .image-2 {
+  height: calc(80vmin / 7.5);
+  margin-top: calc(10vmin / 7.5);
+}
+.header .label .xi {
+  color: rgb(133, 22, 14);
+  font-size: calc(100vmin / 7.5);
+  padding-bottom: calc(10vmin / 7.5);
+}
+.header .text {
+  position: absolute;
+  margin-top: calc(40vmin / 7.5);
+  right: calc(50vmin / 7.5);
+  text-align: center;
+}
+.header .name-plain {
+  font-weight: bolder;
+  font-size: calc(32vmin / 7.5);
+}
+.header .plain {
+  margin-top: calc(10vmin / 7.5);
+  font-size: calc(26vmin / 7.5);
+  color: #6D727F;
+}
+.top-info .text {
+  font-size: calc(26vmin / 7.5);
+  text-align: center;
+  margin: calc(15vmin / 7.5) 0;
+  color: #6D727F;
 }
 /* 视频 */
 .video-wrap {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  margin-top: calc(50vmin / 7.5);
 }
 .video {
   width: 100%;
-  height: 360rpx;
-  /* border-radius: 15rpx; */
-  border-top-left-radius: 15rpx;
-  border-top-right-radius: 15rpx;
+  height: calc(330vmin / 7.5);
+  border-top-left-radius: calc(15vmin / 7.5);
+  border-top-right-radius: calc(15vmin / 7.5);
 }
 /* 弹幕 */
 .danmu-wrap {
@@ -67,122 +91,115 @@
   justify-content: space-between;
   align-items: stretch;
   background-color: #000000;
-  border-bottom-left-radius: 15rpx;
-  border-bottom-right-radius: 15rpx;
-  height: 60rpx;
+  border-bottom-left-radius: calc(15vmin / 7.5);
+  border-bottom-right-radius: calc(15vmin / 7.5);
+  height: calc(60vmin / 7.5);
 }
 .danmu-wrap .input {
   flex-grow: 1;
-  font-size: 16rpx;
+  font-size: calc(16vmin / 7.5);
   color: #FFFFFF;
-  padding: 0 18rpx;
+  padding: 0 calc(18vmin / 7.5);
   height: 100%;
 }
 .danmu-wrap .button {
-  font-size: 16rpx;
+  font-size: calc(16vmin / 7.5);
   color: #FFFFFF;
-  padding: 0 35rpx;
+  padding: 0 calc(35vmin / 7.5);
   display: flex;
   align-items: center;
   font-weight: bolder;
 }
 /* 婚礼详细信息 */
 .info {
-  margin: 70rpx 0;
+  margin: calc(70vmin / 7.5) 0;
 }
 .info .text {
-  font-size: 26rpx;
+  font-size: calc(26vmin / 7.5);
   text-align: center;
-  margin: 15rpx 0;
+  margin: calc(15vmin / 7.5) 0;
   color: #6D727F;
 }
 .info .title {
   text-align: center;
   font-weight: bold;
-  font-size: 32rpx;
-  margin: 40rpx 0;
+  font-size: calc(32vmin / 7.5);
+  margin: calc(40vmin / 7.5) 0;
 }
 
 .calendar {
   width: 100%;
-  margin: 20rpx 0;
+  margin: calc(20vmin / 7.5) 0;
 }
 .map-wrap {
-  border-radius: 15rpx;
-  padding: 20rpx;
-  margin: 20rpx 20rpx 50rpx;
+  border-radius: calc(15vmin / 7.5);
+  padding: calc(20vmin / 7.5);
+  margin: calc(20vmin / 7.5) calc(20vmin / 7.5) calc(50vmin / 7.5);
   box-shadow: rgb(153, 153, 153) 0px 0px 8px;
   color: #6D727F;
 }
 .map-wrap view {
   text-align: left;
-  font-size: 26rpx;
+  font-size: calc(26vmin / 7.5);
 }
 .map {
   width: 100%;
-  height: 350rpx;
+  height: calc(350vmin / 7.5);
 }
 .tip {
-  font-size: 22rpx;
-  margin-bottom: 40rpx;
+  font-size: calc(22vmin / 7.5);
+  margin-bottom: calc(40vmin / 7.5);
 }
 /* 联系我们 */
-/* .connect-wrap {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  position: relative;
-} */
-
 .connect {
   position: relative;
   color: #6D727F;
-  border-radius: 28rpx;
+  border-radius: calc(28vmin / 7.5);
   margin: 0;
   border: 1px solid #6D727F;
-  height: 60rpx;
+  height: calc(60vmin / 7.5);
   margin-left: 50%;
   transform: translateX(-50%);
 }
 .connect .btn-text {
   font-weight: normal;
-  font-size: 24rpx;
+  font-size: calc(24vmin / 7.5);
   line-height: 1;
-  padding: 18rpx 40rpx;
+  padding: calc(18vmin / 7.5) calc(40vmin / 7.5);
 }
 .connect .header {
   top: 0;
-  height: 55rpx;
+  height: calc(55vmin / 7.5);
   position: absolute;
 }
 
 .connect .header1 {
-  left: 10rpx;
+  left: calc(10vmin / 7.5);
 }
 .connect .header2 {
-  right: 10rpx;
+  right: calc(10vmin / 7.5);
 }
 /* 温馨提示 */
 .tips view {
-  font-size: 20rpx;
+  font-size: calc(20vmin / 7.5);
   color: #6D727F;
   line-height: 1;
-  margin: 16rpx 0;
+  margin: calc(16vmin / 7.5) 0;
 }
 .tips view.title {
   color: #000;
   display: inline-block;
   font-weight: bolder;
-  font-size: 32rpx;
-  padding: 15rpx;
+  font-size: calc(32vmin / 7.5);
+  padding: calc(15vmin / 7.5);
   background-color: #999999;
-  margin-bottom: 20rpx;
+  margin-bottom: calc(20vmin / 7.5);
 }
 .tips .gap {
-  height: 30rpx;
+  height: calc(30vmin / 7.5);
 }
 .ending {
-  height: 180rpx;
-  margin: 90rpx 0;
+  height: calc(180vmin / 7.5);
+  margin: calc(90vmin / 7.5) 0;
   width: 100%;
 }

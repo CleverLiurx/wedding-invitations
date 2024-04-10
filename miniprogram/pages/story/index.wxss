@@ -1,92 +1,87 @@
 /* pages/story/index.wxss */
 .content {
   position: relative;
-  width: 90%;
+  width: 90vmin;
   margin: 0 auto;
-  padding-bottom: 100rpx;
+  padding-bottom: calc(100vmin / 7.5);
 }
 .content view {
-  font-size: 26rpx;
+  font-size: calc(26vmin / 7.5);
 }
 .tc {
   text-align: center;
 }
 .tc > view {
-  margin-top: 20rpx;
-}
-/* 我把另一半介绍给你 */
-.title-image {
-  width: 80%;
-  height: 150rpx;
-  margin: 70rpx 10% 0rpx;
+  margin-top: calc(20vmin / 7.5);
 }
 /* 头部 */
 .header {
   position: relative;
-  height: 735rpx;
+  height: calc(450vmin / 7.5);
 }
-.header .bg {
-  width: 100%;
-  height: 450rpx;
-}
-.header .label {
-  width: 240rpx;
-  height: 500rpx;
-  background-color: #fff;
-  border-radius: 120rpx;
+.header .cover {
   position: absolute;
-  top: 200rpx;
-  left: 50rpx;
-  box-shadow: rgb(153, 153, 153) 0px 0px 8px;
+  width: 100%;
+  height: 100%;
+}
+.header .main {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header .main .logo {
+  width: 250rpx;
+  height: 350rpx;
+  margin: 0 50rpx;
+  border-radius: 30rpx;
+  box-shadow: 0 0 5rpx rgb(73, 71, 71);
+}
+.header .main .content {
+  height: 230rpx;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  color: #FFF;
+  padding: 0;
 }
-.header .label image {
-  width: calc(100% - 40rpx);
+.header .main .content .mini {
+  font-size: 24rpx;
+  color: rgb(117, 101, 55);
 }
-.header .label .image-1 {
-  border-top-left-radius: calc(100% - 40rpx);
-  border-top-right-radius: calc(100% - 40rpx);
-  margin-top: 20rpx;
-  height: 225rpx;
+.header .main .content .mini .order {
+  color: rgb(117, 101, 55);
+  background-color: #DCBC7D;
+  padding: 5rpx 15rpx;
 }
-.header .label .image-2 {
-  height: 80rpx;
-  margin-top: 10rpx;
+.header .main .content .mini .love {
+  padding: 5rpx 15rpx;
+  color: #FFF;
+  background-color: #77653B;
 }
-.header .label .xi {
-  color: rgb(133, 22, 14);
-  font-size: 100rpx;
-  padding-bottom: 10rpx;
+.image-wrap {
+  display: flex;
+  background-color: #393E3E;
+  margin-bottom: calc(50vmin / 7.5);
+  padding: 35rpx 15rpx;
 }
-.header .text {
-  position: absolute;
-  margin-top: 40rpx;
-  right: 50rpx;
-  text-align: center;
-}
-.header .name-plain {
-  font-weight: bolder;
-  font-size: 32rpx;
-}
-.header .plain {
-  margin-top: 10rpx;
+.image-wrap image {
+  height: 200rpx;
+  margin: 5rpx;
 }
 /* 月亮 */
 .moon {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 60rpx;
+  margin-top: calc(60vmin / 7.5);
 }
 .moon image{
   width: 45%;
   border-radius: 50%;
 }
 .moon .birthday {
-  margin: 20rpx 0;
+  margin: calc(20vmin / 7.5) 0;
 }
 /* 我们的故事 */
 .our-story {
@@ -96,13 +91,13 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  margin: 80rpx 0;
+  margin: calc(80vmin / 7.5) 0;
 }
 
 .our-story text {
   color: #000;
-  font-size: 26rpx;
-  margin: 5rpx 0;
+  font-size: calc(26vmin / 7.5);
+  margin: calc(5vmin / 7.5) 0;
 }
 
 .our-story.right {
@@ -119,21 +114,21 @@
   color: #FFF;
   background-color: #83776B;
   display: block;
-  font-size: 34rpx;
-  border-radius: 30rpx;
-  padding: 10rpx 30rpx;
-  margin-bottom: 25rpx;
+  font-size: calc(34vmin / 7.5);
+  border-radius: calc(30vmin / 7.5);
+  padding: calc(10vmin / 7.5) calc(30vmin / 7.5);
+  margin-bottom: calc(25vmin / 7.5);
   line-height: 1;
 }
 
 .our-story  .our-story-subtitle {
   color: #555255;
   display: block;
-  font-size: 26rpx;
+  font-size: calc(26vmin / 7.5);
 }
 
 .our-story .story-img-wrap {
-  margin-top: 20rpx;
+  margin-top: calc(20vmin / 7.5);
   position: relative;
   width: 100%;
   display: flex;
@@ -142,40 +137,40 @@
 }
 .story-img-wrap image {
   box-sizing: border-box;
-  border-radius: 10rpx;
-  margin: 10rpx;
-  box-shadow: 0 0 2rpx #000;
+  border-radius: calc(10vmin / 7.5);
+  margin: calc(10vmin / 7.5);
+  box-shadow: 0 0 calc(2vmin / 7.5) #000;
   width: 100%;
 }
 
 .story-img-wrap-1 image{
-  width: calc(50% - 20rpx);
+  width: calc(50% - 20vmin / 7.5);
 }
 
 .story-img-wrap-2 .story-img-item-2,
 .story-img-wrap-2 .story-img-item-3{
-  width: calc(50% - 20rpx);
+  width: calc(50% - 20vmin / 7.5);
 }
 
 .story-img-wrap-3 .story-img-item-2,
 .story-img-wrap-3 .story-img-item-3{
-  width: calc(50% - 20rpx);
+  width: calc(50% - 20vmin / 7.5);
 }
 .story-img-wrap-3 .story-img-item-4 {
-  border: 4rpx solid #CDD5E0;
-  padding: 4rpx;
+  border: calc(4vmin / 7.5) solid #CDD5E0;
+  padding: calc(4vmin / 7.5);
 }
 
 .story-img-wrap-4 image,
 .story-img-wrap-5 image {
-  border: 4rpx solid #CDD5E0;
-  padding: 4rpx;
+  border: calc(4vmin / 7.5) solid #CDD5E0;
+  padding: calc(4vmin / 7.5);
 }
 
 .story-img-wrap-6 .story-img-item-2,
 .story-img-wrap-6 .story-img-item-3,
 .story-img-wrap-6 .story-img-item-4 {
-  width: calc(33% - 20rpx);
+  width: calc(33% - 20vmin / 7.5);
 }
 .story-img-wrap-6 .story-img-item-3 {
   margin-top: 13%;
@@ -183,19 +178,19 @@
 
 .story-img-wrap-8 .story-img-item-2,
 .story-img-wrap-8 .story-img-item-3 {
-  width: calc(50% - 20rpx);
+  width: calc(50% - 20vmin / 7.5);
   align-self: flex-end
 }
 
 .story-img-wrap-9 image  {
-  width: calc(50% - 20rpx);
-  height: 190rpx;
+  width: calc(50% - 20vmin / 7.5);
+  height: calc(190vmin / 7.5);
 }
 
 .story-img-wrap-10 .story-img-item-2,
 .story-img-wrap-10 .story-img-item-3,
 .story-img-wrap-10 .story-img-item-4 {
-  width: calc(33% - 20rpx);
+  width: calc(33% - 20vmin / 7.5);
 }
 .story-img-wrap-10 .story-img-item-3 {
   margin-top: 20%;
@@ -205,12 +200,12 @@
 }
 
 .story-img-wrap-11 image  {
-  width: calc(33% - 20rpx);
-  height: calc(33vw - 40rpx);
+  width: calc(33% - 20vmin / 7.5);
+  height: calc(33vw - 40vmin / 7.5);
 }
 
 .flower {
-  margin-top: 100rpx;
-  width: 100rpx;
-  height: 100rpx;
+  margin-top: calc(100vmin / 7.5);
+  width: calc(100vmin / 7.5);
+  height: calc(100vmin / 7.5);
 }

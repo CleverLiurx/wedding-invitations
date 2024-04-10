@@ -1,22 +1,28 @@
 <!--pages/invite/index.wxml-->
 <view class="content">  
-  <ui-music></ui-music>
-  <!-- 音乐 -->
-  <view class="music">
-    <view class="left">
-      <view>
-        <image src="../../images/invite/music.png" />
-        <text class="music-name">奢香夫人</text>
-      </view>
-      <view class="user">
-        演唱: 刘容新 石蕊
-      </view>
-    </view>
-    <image class="right" src="../../images/invite/music-bg.png" />
-  </view>
   <!-- 婚礼邀请函 -->
   <view class="invitation">
     <image src="../../images/invite/invite.png" mode="aspectFit"/>
+  </view>
+  <!-- 大图 -->
+  <view class="header">
+    <image class="bg" src="/images/invite/story-main.png" mode="aspectFill"/>
+    <view class="label">
+      <image class="image-1" src="../../images/invite/story-label-1.png" mode=""/>
+      <image class="image-2" src="../../images/invite/story-label-2.png" mode="aspectFit"/>
+      <text class="xi">囍</text>
+    </view>
+    <view class="text">
+      <view class="name-plain">刘容新 & 石蕊</view>
+      <view class="plain">2024.10.04</view>
+      <view class="plain">我们终于交卷啦</view>
+    </view>
+  </view>
+  <view class="top-info">  
+    <view class="text">2018 - 2024</view>
+    <view class="text">七年的时间</view>
+    <view class="text">从同学到恋人</view>
+    <view class="text">最终还是把这份爱升级为陪伴</view>
   </view>
   <!-- 视频 -->
   <view class="video-wrap" style="height: {{ showVideo ? '' : 0 }};">
@@ -28,6 +34,7 @@
       bindtimeupdate="handleTimeupdate"
       src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/invite-video.mp4"
       enable-play-gesture
+      vslide-gesture
       danmu-btn
       enable-danmu
       danmu-list="{{danmuList}}"
@@ -55,8 +62,6 @@
   </view>
   <!-- 婚礼邀请 -->
   <view class="info">
-    <view class="text">2018 - 2024</view>
-    <view class="title">我们不只有七年 还有很多年</view>
     <view class="text">刘容新 & 石蕊</view>
     <view class="text">偕同我们的父母</view>
     <view class="text">诚邀您参加我们的婚礼仪式</view>
@@ -72,7 +77,7 @@
     <view class="text">10:00 集合去婚礼堂</view>
     <view class="text">10:35 到达婚礼堂</view>
     <view class="text">10:55 开始婚礼</view>
-    <view class="text">11:30 重头戏-开饭</view>
+    <view class="text">11:30 开饭开饭</view>
     <view class="title">婚 礼 地 点</view>
     <view class="text">点击地图一键导航</view>
     <view class="map-wrap">    

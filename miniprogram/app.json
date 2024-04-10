@@ -12,6 +12,7 @@
     "navigationBarTitleText": "刘容新 & 石蕊",
     "navigationBarTextStyle": "black"
   },
+  "resizable": false,
   "resolveAlias": {
     "@/utils/*": "utils/*",
     "@/images/*": "images/*"

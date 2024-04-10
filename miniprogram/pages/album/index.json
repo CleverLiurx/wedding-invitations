@@ -1,6 +1,4 @@
 {
   "navigationBarTitleText": "高光时刻",
-  "usingComponents": {
-    "ui-music": "/components/music/index"
-  }
+  "usingComponents": {}
 }

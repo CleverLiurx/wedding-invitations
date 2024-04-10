@@ -1,22 +1,26 @@
 <!--pages/story/index.wxml-->
-<ui-music></ui-music>
-<view class="content">
-  <!-- 我把另一半介绍给你 -->
-  <image class="title-image" src="../../images/stories/he.png" mode="aspectFit"/>
-  <!-- 头部 -->
-  <view class="header">
-    <image class="bg" src="/images/stories/story-main.png" mode="aspectFill"/>
-    <view class="label">
-      <image class="image-1" src="../../images/stories/story-label-1.png" mode=""/>
-      <image class="image-2" src="../../images/stories/story-label-2.png" mode="aspectFit"/>
-      <text class="xi">囍</text>
-    </view>
-    <view class="text">
-      <view class="name-plain">刘容新 & 石蕊</view>
-      <view class="plain">2024.10.04</view>
-      <view class="plain">我们终于交卷啦</view>
+<view class="header">
+  <image class="cover" src="../../images/stories/header-bg.png" mode="aspectFill"/>
+  <view class="main">
+    <image class="logo" src="../../images/stories/header-main.png" mode="aspectFill"/>
+    <view class="content">
+      <text>我们的故事</text>
+      <text>Our story (2024)</text>
+      <view class="mini">
+        <text class="order">NO.1</text>
+        <text class="love">爱情电影榜单 > </text>
+      </view>
+      <text class="mini">中国/剧情 爱情 喜剧</text>
+      <text class="mini">2024年上映/时长7年</text>
     </view>
   </view>
+</view>
+<view class="image-wrap">
+  <image src="../../images/stories/header-sub.png" mode="heightFix"/>
+  <image src="../../images/stories/header-sub.png" mode="heightFix"/>
+  <image src="../../images/stories/header-sub.png" mode="heightFix"/>
+</view>
+<view class="content">
   <!-- 月亮 -->
   <view class="tc">
     <view>出生时的月亮</view>

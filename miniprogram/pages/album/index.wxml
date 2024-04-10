@@ -1,5 +1,4 @@
 <!--pages/photo/index.wxml-->
-<ui-music></ui-music>
 <view class="content">
   <image class="title-image" src="/images/album/moment.png" mode="aspectFit"/>
   <!-- 开头语 -->

@@ -12,7 +12,7 @@ const album = [
     cnName: "婚礼当日",
     cover: "/images/album/wedding_day.png",
     name: "wedding_day",
-    description: '石　蕊',
+    description: '　石　蕊',
     descriptionImage: '/images/album/men.png',
     pos: 'right',
     locked: false,

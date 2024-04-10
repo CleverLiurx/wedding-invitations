@@ -1,7 +1,7 @@
 export const markers1 = {
   id: 1,
-  latitude: 40.621998,
-  longitude: 118.071376,
+  latitude: 40.621889,
+  longitude: 118.07076,
   iconPath: '../../images/invite/nav.png',
   width: 30,
   height: 30,
@@ -18,8 +18,8 @@ export const markers1 = {
 }
 export const markers2 = {
   id: 2,
-  latitude: 40.770167,
-  longitude: 118.158086,
+  latitude: 40.753526,
+  longitude: 118.163854,
   iconPath: '../../images/invite/nav.png',
   width: 30,
   height: 30,

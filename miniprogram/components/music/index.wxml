@@ -1,5 +1,0 @@
-<!--components/music/index.wxml-->
-<view class="music {{ isMusicPlay ? 'play' : '' }}" bind:tap="toggle">
-  <image src="../../images/music_icon.png" class="music-icon"></image>
-  <image src="../../images/music_play.png" class="music-play"></image>
-</view>

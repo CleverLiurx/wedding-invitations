@@ -1,7 +1,6 @@
 // pages/invite/index.js
 import { share5x4, share1x1 } from '@/utils/index'
 import { markers1, markers2 } from '@/utils/markers'
-import Event from '@/utils/event'
 
 Page({
   onLoad() {
@@ -41,7 +40,7 @@ Page({
   },
   handleVideoPlay() {
     this.play = true
-    Event.emit('music:status', false)
+    // Event.emit('music:status', false)
   },
   handleTimeupdate(event) {
     this.videoCurrentTime = event.detail.currentTime
