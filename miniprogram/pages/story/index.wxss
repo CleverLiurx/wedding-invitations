@@ -63,10 +63,10 @@
   display: flex;
   background-color: #393E3E;
   margin-bottom: calc(50vmin / 7.5);
-  padding: 35rpx 15rpx;
+  padding: 25rpx 15rpx;
 }
 .image-wrap image {
-  height: 200rpx;
+  height: 170rpx;
   margin: 5rpx;
 }
 /* 月亮 */

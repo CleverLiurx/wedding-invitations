@@ -6,7 +6,7 @@
     "pages/photo/index"
   ],
   "window": {
-    "backgroundColor": "#000000",
+    "backgroundColor": "#FFFFFF",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTitleText": "刘容新 & 石蕊",

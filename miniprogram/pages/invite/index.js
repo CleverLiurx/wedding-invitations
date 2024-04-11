@@ -1,6 +1,5 @@
 // pages/invite/index.js
 import { share5x4, share1x1 } from '@/utils/index'
-import { markers1, markers2 } from '@/utils/markers'
 
 Page({
   onLoad() {
@@ -17,30 +16,26 @@ Page({
     showVideo: false,
     danmuList: [],
     inputValue: '',
-    markers1,
-    markers2,
   },
   gotoYSG() {
-    const { latitude, longitude, posName, address } = this.data.markers1
     wx.openLocation({
-      latitude,
-      longitude,
-      name: posName,
-      address,
+      latitude: 40.621889,
+      longitude: 118.07076,
+      name: '新郎家',
+      address: '河北省承德市兴隆县大杖子镇邢杖子村杨树沟',
     })
   },
   gotoTY() {
-    const { latitude, longitude, posName, address } = this.data.markers2
     wx.openLocation({
-      latitude,
-      longitude,
-      name: posName,
-      address,
+      id: 2,
+      latitude: 40.753526,
+      longitude: 118.163854,
+      name: '婚礼堂',
+      address: '河北省承德市下板城唐韵盛世大酒店(万福厅)',
     })
   },
   handleVideoPlay() {
     this.play = true
-    // Event.emit('music:status', false)
   },
   handleTimeupdate(event) {
     this.videoCurrentTime = event.detail.currentTime
