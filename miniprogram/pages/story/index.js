@@ -21,7 +21,7 @@ Page({
       name: 'quickstartFunctions',
       data: { type: 'getSuperConfig', name: 'story' },
     });
-    const stories = res?.result?.data?.[0].value || []
+    const stories = res?.result || []
     this.setData({
       stories,
     })

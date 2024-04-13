@@ -1,19 +1,18 @@
-const getSuperConfig = require('./getSuperConfig/index');
-const getPhotos = require('./getPhotos/index');
-const getDanmuList = require('./getDanmuList/index');
-const addDanmu = require('./addDanmu/index');
+const SuperConfig = require('./SuperConfig/index');
+const Photos = require('./Photos/index');
+const Danmu = require('./Danmu/index');
 
 // 云函数入口函数
 exports.main = async (event, context) => {
   switch (event.type) {
     case 'getSuperConfig':
-      return await getSuperConfig.main(event, context);
+      return await SuperConfig.get(event, context);
     case 'getPhotos':
-      return await getPhotos.main(event, context);
+      return await Photos.get(event, context);
     case 'getDanmuList':
-      return await getDanmuList.main(event, context);
+      return await Danmu.get(event, context);
     case 'addDanmu':
-      return await addDanmu.main(event, context);
+      return await Danmu.add(event, context);
   }
 };
         

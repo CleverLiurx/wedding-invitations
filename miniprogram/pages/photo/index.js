@@ -15,9 +15,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    if (!options) return
-    const { name, cnName } = options
-    if (!name || !cnName) return
+    const { name, cnName } = options || {}
+    if (!name || !cnName) {
+      this.setData({
+        urls: [],
+        photos: [],
+        loading: false,
+      })
+      wx.setNavigationBarTitle({
+        title: '错误的相册'
+      })
+      return
+    }
     wx.setNavigationBarTitle({
       title: cnName
     })
@@ -29,32 +38,33 @@ Page({
   },
 
   async getPhotos(name) {
-    this.setData({
-      urls: [],
-      photos: [],
-      loading: true,
-    })
-    const res = await wx.cloud.callFunction({
-      name: 'quickstartFunctions',
-      data: { type: 'getPhotos', category: name },
-    });
-    const photos = res?.result?.photos?.data || []
-    const urls = photos.map(photo => photo.src)
-    this.setData({
-      urls,
-      photos,
-    })
-    // 留1s加载时间给预览图
-    if (photos.length === 0) {
+    try {
       this.setData({
-        loading: false,
+        urls: [],
+        photos: [],
+        loading: true,
       })
-    } else {
+      const res = await wx.cloud.callFunction({
+        name: 'quickstartFunctions',
+        data: { type: 'getPhotos', category: name },
+      });
+      const photos = res?.result || []
+      const urls = photos.map(photo => photo.src)
+      this.setData({
+        urls,
+        photos,
+      })
+      // 留1s加载时间给预览图
       setTimeout(() => {
         this.setData({
           loading: false,
         })
-      }, 1000)
+      }, photos.length === 0 ? 0 : 1000)
+    } catch (err) {
+      this.setData({
+        photos: [],
+        loading: false,
+      })
     }
   },
 

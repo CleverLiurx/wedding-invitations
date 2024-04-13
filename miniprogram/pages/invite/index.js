@@ -48,7 +48,7 @@ Page({
       name: 'quickstartFunctions',
       data: { type: 'getSuperConfig', name: 'video' },
     });
-    const showVideo = res?.result?.data?.[0].value || false
+    const showVideo = res?.result || false
     this.setData({
       showVideo,
     })
@@ -58,7 +58,7 @@ Page({
       name: 'quickstartFunctions',
       data: { type: 'getDanmuList' },
     });
-    const danmuList = res?.result?.danmu?.data || []
+    const danmuList = res?.result || []
     this.setData({
       danmuList,
     })
@@ -79,7 +79,7 @@ Page({
       this.autoPause = false
     }
   },
-  sendDanmu() {
+  async sendDanmu() {
     const text = this.data.inputValue
     if (!text) return
     this.setData({
