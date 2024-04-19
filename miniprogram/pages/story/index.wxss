@@ -31,14 +31,14 @@
   align-items: center;
 }
 .header .main .logo {
-  width: 250rpx;
-  height: 350rpx;
-  margin: 0 50rpx;
-  border-radius: 30rpx;
-  box-shadow: 0 0 5rpx rgb(73, 71, 71);
+  width: calc(250vmin / 7.5);
+  height: calc(350vmin / 7.5);
+  margin: 0 calc(50vmin / 7.5);
+  border-radius: calc(30vmin / 7.5);
+  box-shadow: 0 0 calc(5vmin / 7.5) rgb(73, 71, 71);
 }
 .header .main .headerContent {
-  height: 230rpx;
+  height: calc(230vmin / 7.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,16 +46,16 @@
   padding: 0;
 }
 .header .main .headerContent .mini {
-  font-size: 24rpx;
+  font-size: calc(24vmin / 7.5);
   color: rgb(117, 101, 55);
 }
 .header .main .headerContent .mini .order {
   color: rgb(117, 101, 55);
   background-color: #DCBC7D;
-  padding: 5rpx 15rpx;
+  padding: calc(5vmin / 7.5) calc(15vmin / 7.5);
 }
 .header .main .headerContent .mini .love {
-  padding: 5rpx 15rpx;
+  padding: calc(5vmin / 7.5) calc(15vmin / 7.5);
   color: #FFF;
   background-color: #77653B;
 }
@@ -63,11 +63,11 @@
   display: flex;
   background-color: #393E3E;
   margin-bottom: calc(50vmin / 7.5);
-  padding: 25rpx 15rpx;
+  padding: calc(25vmin / 7.5) calc(15vmin / 7.5);
 }
 .image-wrap image {
-  height: 170rpx;
-  margin: 5rpx;
+  height: calc(170vmin / 7.5);
+  margin: calc(5vmin / 7.5);
 }
 /* 月亮 */
 .moon {

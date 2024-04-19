@@ -46,7 +46,7 @@
         type="text"
         value="{{inputValue}}"
         placeholder="点此发送弹幕"
-        placeholder-style="font-size: 16rpx; color: #FFFFFF"
+        placeholder-style="font-size: calc(16vmin / 7.5); color: #FFFFFF"
         confirm-type="send"
         bindinput="handleInput"
         bindconfirm="sendDanmu"

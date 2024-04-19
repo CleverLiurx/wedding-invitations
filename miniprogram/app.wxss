@@ -16,5 +16,5 @@ page {
 }
 
 view {
-  font-size: 30rpx;
+  font-size: calc(30vmin / 7.5);
 }
