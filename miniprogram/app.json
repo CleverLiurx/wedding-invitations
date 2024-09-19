@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/invite/index",
-    "pages/story/index",
     "pages/album/index",
     "pages/photo/index"
   ],
@@ -9,7 +8,7 @@
     "backgroundColor": "#FFFFFF",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FFFFFF",
-    "navigationBarTitleText": "刘容新 & 石蕊",
+    "navigationBarTitleText": "婚礼请柬",
     "navigationBarTextStyle": "black"
   },
   "resizable": false,
@@ -30,12 +29,6 @@
         "text": "邀请函",
         "iconPath": "images/icons/invite.png",
         "selectedIconPath": "images/icons/invite.png"
-      },
-      {
-        "pagePath": "pages/story/index",
-        "text": "听故事",
-        "iconPath": "images/icons/story.png",
-        "selectedIconPath": "images/icons/story.png"
       },
       {
         "pagePath": "pages/album/index",

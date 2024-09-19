@@ -9,7 +9,7 @@ exports.get = async (event, context) => {
     const result = await db.collection('super_config')
       .where({ name: event.name })
       .get();
-    return result.data[0].value
+    return result?.data?.[0]
   } catch (err) {
     return null
   }

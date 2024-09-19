@@ -15,7 +15,7 @@
 }
 .loading {
   width: 100%;
-  height: calc(100vh - 45px);
+  height: 100vh;
   position: absolute;
   background-color: #FFF;
 }

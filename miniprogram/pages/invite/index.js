@@ -13,7 +13,7 @@ Page({
     this.autoPause = false
   },
   data: {
-    showVideo: false,
+    video: {},
     danmuList: [],
     inputValue: '',
   },
@@ -48,9 +48,9 @@ Page({
       name: 'quickstartFunctions',
       data: { type: 'getSuperConfig', name: 'video' },
     });
-    const showVideo = res?.result || false
+    const video = res?.result || {}
     this.setData({
-      showVideo,
+      video,
     })
   },
   async getDanmuList() {

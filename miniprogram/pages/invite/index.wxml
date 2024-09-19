@@ -6,9 +6,9 @@
   </view>
   <!-- 大图 -->
   <view class="header">
-    <image class="bg" src="/images/invite/story-main.png" mode="aspectFill"/>
+    <image class="bg" src="/images/invite/story-main.jpg" mode="aspectFill"/>
     <view class="label">
-      <image class="image-1" src="../../images/invite/story-label-1.png" mode=""/>
+      <image class="image-1" src="../../images/invite/story-label-1.jpg" mode="aspectFill"/>
       <image class="image-2" src="../../images/invite/story-label-2.png" mode="aspectFit"/>
       <text class="xi">囍</text>
     </view>
@@ -25,14 +25,14 @@
     <view class="text">最终还是把这份爱升级为陪伴</view>
   </view>
   <!-- 视频 -->
-  <view class="video-wrap" style="height: {{ showVideo ? '' : 0 }};">
+  <view class="video-wrap" style="height: {{ video.show ? '' : 0 }};">
     <video
       id="video"
       class="video"
       bindplay="handleVideoPlay"
       bindpause="handleVideoPause"
       bindtimeupdate="handleTimeupdate"
-      src="cloud://cloud1-7gmcl9gy8f6410db.636c-cloud1-7gmcl9gy8f6410db-1321709151/invite-video.mp4"
+      src="{{video.url}}"
       enable-play-gesture
       vslide-gesture
       danmu-btn
@@ -70,14 +70,14 @@
     <view class="text">2024年10月04日</view>
     <view class="text">甲辰龙年 九月初二</view>
     <image class="calendar" src="../../images/invite/calendar.png" mode="aspectFit"/>
-    <view class="text">06:50 出发接亲</view>
-    <view class="text">07:25 到达新娘家</view>
-    <view class="text">08:00 出发返回新郎家</view>
-    <view class="text">08:35 到达新郎家</view>
-    <view class="text">10:00 集合去婚礼堂</view>
-    <view class="text">10:35 到达婚礼堂</view>
-    <view class="text">10:55 开始婚礼</view>
-    <view class="text">11:30 开饭开饭</view>
+    <view class="text">05:28 出发接亲</view>
+    <view class="text">06:08 到达新娘家</view>
+    <view class="text">06:56 出发返回新郎家</view>
+    <view class="text">07:40 到达新郎家</view>
+    <view class="text">09:00 集合去婚礼堂</view>
+    <view class="text">09:30 到达婚礼堂</view>
+    <view class="text">10:58 典礼</view>
+    <view class="text">11:48 午宴</view>
     <view class="title">婚 礼 地 点</view>
     <view class="text">点击地图一键导航</view>
     <view class="map-wrap">    
@@ -86,7 +86,7 @@
       <image class="map" bind:tap="gotoYSG" src="../../images/invite/groom.jpg" mode=""/>
     </view>
     <view class="map-wrap">
-      <view>婚礼堂</view>
+      <view>婚礼堂(新娘家)</view>
       <view>承德市下板城唐韵盛世大酒店</view>
       <image class="map" bind:tap="gotoTY" src="../../images/invite/bride.jpg" mode=""/>
     </view>

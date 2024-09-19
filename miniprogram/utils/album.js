@@ -18,9 +18,9 @@ const album = [
     locked: false,
   },
   {
-    cnName: "碎碎念",
+    cnName: "婚礼当日-精修",
     cover: "/images/album/trivia.png",
-    name: "trivia",
+    name: "wedding_day_retouched",
     description: [
       '一 屋 / 二 人',
       '三 餐 / 四 季'
